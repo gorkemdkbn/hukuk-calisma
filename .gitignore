@@ -1,0 +1,12 @@
+# Vercel
+.vercel
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Kaynak PDF (telifli, repoya dahil edilmez)
+*.pdf
+
+# Node
+node_modules/
