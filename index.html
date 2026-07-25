@@ -75,6 +75,17 @@
   .meta b{color:var(--ink);font-weight:600}
   .dot{width:4px;height:4px;border-radius:50%;background:var(--brass)}
 
+  /* sınavlar butonu */
+  .cta-row{margin-top:22px}
+  .cta{display:inline-flex;align-items:center;gap:11px;text-decoration:none;
+    font-size:15.5px;font-weight:650;padding:13px 20px;border-radius:12px;
+    background:var(--accent);color:#fff;box-shadow:var(--shadow);transition:.16s}
+  .cta:hover{filter:brightness(1.09);transform:translateY(-1px)}
+  .cta:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+  .cta svg{width:19px;height:19px;flex:none}
+  .cta-note{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    opacity:.8;border-left:1px solid rgba(255,255,255,.35);padding-left:11px;margin-left:2px}
+
   /* layout */
   .layout{display:grid;grid-template-columns:248px minmax(0,1fr);gap:clamp(28px,5vw,64px);
     padding:34px 0 96px;align-items:start}
@@ -220,6 +231,13 @@
       <span class="dot"></span>
       <span><b>Tüm kitap:</b> §1 – §54 · 506 kart</span>
       <span><b>Düzenleyen</b> GÖRKEM DİKBAKAN</span>
+    </div>
+    <div class="cta-row">
+      <a class="cta" href="sinavlar.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2.5 2.5L16 8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+        Testleri Çöz
+        <span class="cta-note">5 klasik sınav</span>
+      </a>
     </div>
   </header>
 
